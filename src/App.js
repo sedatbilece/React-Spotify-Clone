@@ -1,14 +1,21 @@
+import Sidebar from 'components/Sidebar';
 
-import './App.css';
+import Content from 'components/Content';
+import BottomBar from 'components/BottomBar';
+
 
 function App() {
   return (
-    <div className="App">
-       <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <button className='btn bg-red-400  cursor-pointer'> buton</button>
-    </div>
+    < >
+        <div className='wrapper' >
+          <Sidebar />
+          <Content />
+        </div>
+        <BottomBar />
+   
+
+
+    </>
   );
 }
 
