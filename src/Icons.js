@@ -62,6 +62,52 @@ const DownloadIcon = ({size}) => {
     )
 }
 
+const PrevIcon = ({size}) => {
+
+    return (
+        <svg role="img" height={size} width={size} class="Svg-ytk21e-0 gFcOie IYDlXmBmmUKHveMzIPCF" viewBox="0 0 24 24">
+            <path fill="#b3b3b3" d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z">
+            </path>
+            </svg>
+
+    )
+}
+
+
+const NextIcon = ({size}) => {
+
+    return (
+        <svg role="img" height={size} width={size} class="Svg-ytk21e-0 gFcOie IYDlXmBmmUKHveMzIPCF" viewBox="0 0 24 24">
+           <path  fill="#b3b3b3" d="M8.043 2.793a1 1 0 000 1.414L15.836 12l-7.793 7.793a1 1 0 101.414 1.414L18.664 12 9.457 2.793a1 1 0 00-1.414 0z">
+
+           </path>
+            </svg>
+
+    )
+}
+
+const DownDirIcon = ({size}) => {
+
+    return (
+        <svg role="img" height={size} width={size} class="Svg-ytk21e-0 gFcOie IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+
+<path  fill="#b3b3b3" d="M14 6l-6 6-6-6h12z"></path>
+            </svg>
+
+    )
+}
+
+
+const PlayIcon = ({size}) => {
+
+    return (
+        <svg role="img" height={size} width={size} class="Svg-ytk21e-0 gFcOie IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+            <path fill="#000" d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"></path>
+            </svg>
+
+    )
+}
+
 const Icon =  ({size=24,name}) =>{
 
 
@@ -71,7 +117,11 @@ const Icon =  ({size=24,name}) =>{
         library: LibraryIcon,
         plus: PlusIcon,
         heart:HeartIcon,
-        download:DownloadIcon
+        download:DownloadIcon,
+        prev:PrevIcon,
+        next:NextIcon,
+        downdir:DownDirIcon,
+        play:PlayIcon
 
     }
 

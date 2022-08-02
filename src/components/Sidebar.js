@@ -8,7 +8,7 @@ function Sidebar (){
 
 
 
-    return (<aside className='w-60 pt-6 flex flex-col bg-black'>
+    return (<aside className='w-60 pt-6 flex flex-col bg-black flex-shrink-0'>
 
         <a href='#' className="mb-7 px-6">
         <img src={logo} className='h-10' />
