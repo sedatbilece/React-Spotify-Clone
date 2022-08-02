@@ -40,7 +40,8 @@ function Home (){
 
     return(<div>
         <Section title='Beğendiklerin ve dahası' more='#' items={items}/>
-        
+        <Section title='Beğendiklerin ve dahası' more='#' items={items}/>
+        <Section title='Beğendiklerin ve dahası' more='#' items={items}/>
     </div>)
 }
 

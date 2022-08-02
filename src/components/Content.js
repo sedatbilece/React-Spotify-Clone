@@ -8,7 +8,7 @@ function Content (){
 
 
 
-    return (<div className='flex-auto'>
+    return (<div className='flex-auto overflow-auto'>
         <Navbar />
          <div className='px-8 pt-4'>
          <Routes>
