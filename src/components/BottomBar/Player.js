@@ -2,19 +2,59 @@ import {Icon } from 'Icons'
 import {useAudio} from 'react-use';
 import { secondsToTime } from 'utils';
 import CostumRange from './CostumRange';
+import {useDispatch,useSelector} from 'react-redux';
+import { useEffect } from 'react';
+import {setControls} from 'stores/player';
+import { fireEvent } from '@testing-library/react';
+
+import aurora from 'sounds/aurora.mp3';
+import dopamine from 'sounds/dopamine.mp3';
+import fire from 'sounds/fire.mp3';
+import shivers from 'sounds/shivers.mp3';
+import sugar from 'sounds/sugar.mp3';
+
+
 export default function Player(){
 
- 
-    
+    const dispatch = useDispatch();
+    const {current} = useSelector(state=>state.player);
+     
+    const getmp3 ={
+        'aurora':aurora,
+        'dopamine':dopamine,
+        'fire':fire,
+        'shivers':shivers,
+        'sugar':sugar
+    }
+
 
     const [audio, state, controls, ref] = useAudio({
-        src: 'https://file.api.audio/demo.mp3'
+        src:getmp3[current.src],
       });
+
+      useEffect(()=>{
+ 
+        controls.play();
     
+    },[current])
+
+useEffect(()=>{
+ 
+    dispatch(setControls(controls));
+
+},[])
 
     return (<div className="flex justify-between items-center h-full px-4">
-        <div className="min-w-[11.25rem] w-[30%] flex">
-           sol
+        <div className="min-w-[11.25rem] w-[30%] flex item-center">
+             
+             {current && <div className='flex items-center'>
+                          <div className='h-14 w-14 mr-2 '>
+                               <img src={current.image}></img>
+                          </div>
+                          <div>
+                             <h6 className='text-sm hover:underline'>{current.title}</h6>
+                          </div>
+             </div>}
         </div>
 
         <div className="flex flex-col items-center max-w-[45.125rem] w-[40%] ">
