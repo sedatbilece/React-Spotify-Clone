@@ -8,7 +8,7 @@ export default function Player(){
     
 
     const [audio, state, controls, ref] = useAudio({
-        src: 'https://v1.api.audio/url/bf02e7/default.mp3'
+        src: 'https://file.api.audio/demo.mp3'
       });
     
 
@@ -58,8 +58,33 @@ export default function Player(){
             </div>
         </div>
 
-        <div className="min-w-[11.25rem] w-[30%] flex justify-end">
-            sağ
+        <div className="min-w-[11.25rem] w-[30%] flex justify-end item-center">
+        <button className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100">
+                    <Icon name='queue' size={16}/>
+                </button>
+
+                <button className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100">
+                    <Icon name='device' size={16}/>
+                </button>
+
+                <button className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100">
+                    <Icon name={state?.volume===0?'volumeMute':'volumeNormal'} size={16}/>
+                </button>
+
+                <div className='w-[5.8rem] max-w-full'>
+                <CostumRange 
+                   step ={0.01}
+                   min={0}
+                   max={1}
+                   value={state?.volume}
+                   onChange={value => controls.volume(value )}
+
+                  /></div>
+                  <button className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100">
+                    <Icon name='fullScreen' size={16}/>
+                </button>
+
+                
         </div>
 
     </div>)
