@@ -5,7 +5,6 @@ import BottomBar from 'components/BottomBar';
 
 import { BrowserRouter as Router, } from "react-router-dom";
 
-
 function App() {
   return (
     < Router>
