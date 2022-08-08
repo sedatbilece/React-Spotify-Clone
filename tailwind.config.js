@@ -12,6 +12,9 @@ module.exports = {
         link: '#b3b3b3',
         footer: '#181818',
 
+      },
+      boxShadow:{
+        spotify: '0px 2px 4px 0  rgb(0 0 0 / 0.2)',
       }
     },
   },

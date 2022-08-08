@@ -1,4 +1,4 @@
-
+import 'index.css'
 
 function Playlist(){
 

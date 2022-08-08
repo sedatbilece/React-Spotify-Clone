@@ -17,3 +17,24 @@
         @apply flex;
     }
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+  }

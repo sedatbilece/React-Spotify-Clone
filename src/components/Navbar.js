@@ -1,6 +1,7 @@
 import Navigaton from "./Navbar/Navigation";
 import Auth from "./Navbar/Auth";
 import {useMatch } from 'react-router-dom'
+import Search from "./Navbar/Search";
 function Navbar (){
 
 const issearch = useMatch('/search');
@@ -12,7 +13,7 @@ const islibrary = useMatch('/collection');
        
        {issearch && 
        <div>
-            search
+           <Search />
         </div>}
 
         {ishome && 
