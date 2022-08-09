@@ -18,7 +18,7 @@ const islibrary = useMatch('/collection');
 
         {ishome && 
         <div>
-            home
+            
             </div>}
 
         {islibrary &&
