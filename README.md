@@ -22,29 +22,28 @@ In this project  has been made active working `volume control`, `menu control`  
     <li>
            Headlessui : right top user menu
     </li>
-
+</ul>
     
-    
+##### Here is the video
 
-## Player
+[Video's Link](https://drive.google.com/file/d/16OpUrzV6XMgCO_-K37UzF5mnImwfdmmw/view?usp=sharing)    
+
+## Player (gif)
 
 <img src='./Docs/player.gif'>
 We can play on the duration of the song in the player, switch to different songs, control the volume
 <hr>
 
-##  Sidebar 
+##  Sidebar (gif)
 <img src='./Docs/router.gif'>
 Content is loaded with the router structure in the sidebar.
  <hr>   
 
- ##  Menu 
+ ##  Menu (gif)
 
 <img src='./Docs/menu.gif'>
 Controls can be made with the keyboard in the menu
  <hr> 
 
-##### Here is the video
 
-[Video's Link](https://drive.google.com/file/d/16OpUrzV6XMgCO_-K37UzF5mnImwfdmmw/view?usp=sharing)
    
-</ul>
