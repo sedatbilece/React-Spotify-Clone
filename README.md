@@ -29,20 +29,21 @@ In this project  has been made active working `volume control`, `menu control`  
 [Video's Link](https://drive.google.com/file/d/16OpUrzV6XMgCO_-K37UzF5mnImwfdmmw/view?usp=sharing)    
 
 ## Player (gif)
-
-<img src='./Docs/player.gif'>
 We can play on the duration of the song in the player, switch to different songs, control the volume
+<img src='./Docs/player.gif'>
+
 <hr>
 
 ##  Sidebar (gif)
-<img src='./Docs/router.gif'>
 Content is loaded with the router structure in the sidebar.
+<img src='./Docs/router.gif'>
+
  <hr>   
 
  ##  Menu (gif)
-
-<img src='./Docs/menu.gif'>
 Controls can be made with the keyboard in the menu
+<img src='./Docs/menu.gif'>
+
  <hr> 
 
 
