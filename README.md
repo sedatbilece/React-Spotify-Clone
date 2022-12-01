@@ -5,22 +5,22 @@ In this project  has been made active working `volume control`, `menu control`  
 ## Used Pacgakes
 <ul>  
     <li>
-           Tailwind : ui
+           Tailwind : UI Library
     </li>
     <li>
-           Redux-toolkit : state manangment
+           Redux-toolkit : State management
     </li>
     <li>
-           React-range : song slider
+           React-range : Audio slider
     </li>
     <li>
-           React-use : song manangment
+           React-use : Audio management
     </li>
     <li>
            React-Router : Content Pagination
     </li>
     <li>
-           Headlessui : right top user menu
+           Headlessui : Keyboard control
     </li>
 </ul>
     
